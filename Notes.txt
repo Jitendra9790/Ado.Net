@@ -1,0 +1,51 @@
+ASP.NET- Powerful tool for creating dynamic 
+	 and interactive web pages.
+
+       - Uses managed code for processing of web requests.
+
+       - Helps you build powerful, secure and dynamic applications 
+	 using least possible code.
+
+       - Compiled .Net based environment(Applications run faster with more
+	 design time errors trapped at development stage).
+
+ASP.NET (VS) ASP - Good performance through compiled code(Applications run faster with more
+	 	   design time errors trapped at development stage).
+		 - Extensive set of controls and class libraries.
+		 - Runtime error handling using try-catch blocks.
+		 - Scalability(ability to increase output under increased load).
+		 - Flexibility of using languages(C#, VB.NET).
+		 - Caching facility.
+
+Features of ASP.NET - Contains configuration files in xml format
+		    - Ability to use code-behind development to separate business
+		      logic from presentation.
+		    - Web server controls.
+		    - Default authorization and authentication schemes.
+Bird's Eye View - ASP.NET is a collection of .Net classes that collaborate to process
+		  HTTP request and generate HTTP response.
+		- Classes are loaded from system assemblies, GAC(Global Assembly Cache),
+		  and local assemblies.
+		- Developers can choose web forms or web services.
+Web Forms(.aspx file) - It allows you to build powerful form based web pages using
+			asp.net controls.
+Web Services(.asmx file) - It is a way to access server functionality remotely.
+
+Flow in asp.net - A request starts on a browser where user types URL, or click hyperlinks
+		  or submitting HTML forms.
+		- It interfaces with IIS through ISAPI extension at lowest level.
+		- Routes the request to appropriate handler which is responsible 
+		  for handling requests.
+
+Setting the .net version - We should not set extensions manually instead use aspnet_regiis.exe 
+			   utility to ensure all scriptmaps get registered properly.
+
+HTTP Handler - It is a process which runs in response to HTTP request.
+Types of HTTP Handlers :-
+1)ASP.NET Page Handler(.aspx) - Default handler for all asp.net pages.
+2)Web Service Handler(.asmx) - Default handler for web service pages.
+3)Generic Web Handler(.ashx) - Default handler for all web handlers that do not have UI.
+4)Trace Handler(trace.axd) - Displays current page trace information.
+
+HTTP Modules - It is an assembly that is called on every request that is 
+	       made to your application.

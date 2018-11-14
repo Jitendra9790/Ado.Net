@@ -1,0 +1,12 @@
+Authorization  - Process of verifying that you have access to something.
+Authentication - User logons into the system using username and password.
+Configuration Files - Used to configure the parameters and initial settings
+		      computer programs.
+WYSIWYG - What you see is what you get.
+State Management - It is the management of the state of one or more user interface
+		   controls such as textfields, OK buttons, radio buttons in GUI.
+IIS-Internet Information Services.
+ISAPI-Internet Server Application programming Interface
+GET request - Parameters are encoded in URL.
+POST request - It has body within which all data is passed.
+ 
