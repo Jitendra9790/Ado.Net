@@ -1,0 +1,38 @@
+View State - Prevents users from losing data that they have entered into a form.
+	   - All the entries and selections get retained.
+	   - Persistence of data.
+
+Life Cycle of ASP.NET - 
+
+1)Pre-Init => Runtime setting of themes and master pages.
+2)Init => Page Controls are initialised to default state.
+3)LoadViewState => View State data is loaded.
+4)LoadPostData => Info. posted by browsers is consumed here.
+5)InitComplete => All the controls are completely initialised.
+6)PreLoad => View State info. and post back data for declared controls are loaded.
+7)Load => Iniliasation code is loaded at this stage.
+8)Prerender => Any prerendering steps are carried out.
+9)PreRenderComplete => Page is ready to render.
+10)SaveViewState => View State of all the controls are serialized.
+11)Render => Creates text and markup sent to client browser.
+12)Unload => Code to close resources and cleanup.
+
+PostBack - Values of the form are posted to the same page and the same page processes the data.
+AutoPostBack - Automatically posts page back to the server whenever value of control is changed.
+
+Configuration Files in asp.net - 
+
+1)Machine.config - Server wide configuration
+2)web.config - Application side configuration
+
+Page Inspector - Tool that renders a web page.
+	       - Lets you determine which server-side code has produced HTML5 markup that is rendered to browser.
+
+CSS Enhancements :-
+1)Hierarchial Indentation
+2)Color-Selection
+3)Auto-reduce statement completion
+
+Page Redirection :-
+1)Response.redirect() - Sends you to the new page and updates the address bar.
+2)Server.Transfer() - Address bar is not changed and transfers current page request to another on same server.
