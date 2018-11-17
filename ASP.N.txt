@@ -1,0 +1,100 @@
+Skin - Definition of styles applied to server control in your asp.net page.
+     - It works in combination with css files/images.
+     - it is created using .skin extension.
+     - A .skin file can contain one or more control skins for one or more control types.
+     - You can define skins in a separate file for each control or define all the skins for a theme in a single file.
+
+Types of Skin :- 
+1)Default Skin
+2)Named Skin - Control skin with SkinID property set.
+
+To dynamically assign theme to your page : 
+	
+	protected void Page_PreInit(object sender,EventArgs e)
+	{
+		Page.Theme=Request.QueryString["ChangedTheme"];
+	}
+
+To dynamically change the skin for a control :
+	
+	protected void Page_PreInit(object sender,EventArgs e)
+	{
+		TextBox1.SkinID="TextBoxDashed";
+	}
+
+ASP.NET Navigation Support :-
+1)Navigation Controls - Maps human readable display names to URLs.
+2)Site Map Data Source - Stores information about site's hierarchial organization.
+3)Site Map Provider - Interprets physical data and implements kind of database cursor representing current position within site's hierarchy.
+
+SiteMaps - XML files describing logical structure of web application.
+	 - Defined with .sitemap extension.
+	 - Default name is Web.Sitemap
+
+Navigation Controls :-
+1)Menu
+2)TreeView
+3)SiteMapPath(present in breadcrumb format)
+
+SiteMapDataSource Properties :-
+1)ShowStartingNode - Use this property to show/hide first node.
+		   - Default is true.
+2)StartingNodeURL - Use this property to change the starting node.
+		  - Set value to the URL of the node to be the first node.
+3)StartFromCurrentNode - Use this property to set current node as starting node.
+4)StartingNodeoffset - Use this property to shift the starting node up/down the hierarchy.
+		     - Set a positive number to move down and negative number to move up.
+
+Menu Properties :-
+1)StaticMenuStyle/DynamicMenuStyle - Sets the appearance of the overall box in which all menu items appear.
+2)StaticMenuItemStyle/DynamicMenuItemStyle - Sets the appearance of individual menu items.
+3)StaticSelectedStyle/DynamicSelectedStyle - Sets the appearance of the selected item which is previously clicked.
+4)StaticHoverStyle/DynamicHoverStyle - Sets the appearance of the item that user is hovering over with mouse.
+
+TreeView.NodeIndent - Sets the number of pixels of indentation from left in each subsequent level of tree hierarchy.
+ 
+SiteMapNode Navigation Properties :-
+1)Parent Node
+2)Child Node
+3)Previous Sibling
+4)Next Sibling
+
+SiteMapPath Properties :-
+1)ShowToolTip - Displays description when user hovers over a part of site map path.
+2)ParentLevelsDisplayed - Sets maximum number of levels above the current page.
+3)RenderCurrentNodeAsLink - The portion of the page that indicates current page is turned into a clickable link.
+4)PathDirection - Root to Current or Current to Root.
+5)PathSeparator - Characters placed between each level in the path.
+
+Features of Debugging :-
+1)BreakPoints
+2)Stepping
+3)DataViewing
+
+Features of BreakPoints :-
+1)Hit Count : Specifies how many times you wish to hit your breakpoint before application breaks.
+	    : Useful when one has to deal with loops.
+2)Condition : Set a condition.
+
+Features of Stepping :-
+1)Step Into - Ability to walk through your code while you are in break mode.
+2)Step Over - Here the function is executed as a whole unlike in stepin where it executes line by line inside a function.
+3)Step Out - If we want to go directly where the function is called without stepping to end of function.
+
+Data Viewing :-
+1)View and track data while debugging.
+2)Edit values in break mode.
+
+Types of Windows :-
+1)Locals Window - Watch variables inside your current scope.
+2)Autos Window - Watch variables in current line of code and above it.
+3)Watch Window - Watch certain variables or expressions.
+
+Tracing - Technique to monitor execution of asp.net applications.
+Page Level Tracing - Enabled on a page level basis by adding Trace="true".
+		   - TraceMode attribute to sort methods in trace output by category/time.
+		   - Can be enabled programmatically by using Trace.IsEnabled property.
+Application Level Tracing - Adding trace settings to web.config file.
+Viewing trace data - Request page trace.axd to view tracing for multiple page requests.
+		   - Trace.axd provided by System.Web.Handlers.Tracehandler
+		   - Call Trace.Write() in Page_Load event. 
