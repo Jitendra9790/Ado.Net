@@ -1,0 +1,46 @@
+Select - It retreeives all the data present in the database.
+Fields(Column) - It is designed to maintain specific record in the database.
+Records(Rows) - It is an individual entry in a table.
+
+If you want to perform any action on a database we use SQL Statements.
+
+SQL keywords are not case sensitive.
+
+Semicolons is a standard way to separate each SQL statement in a database system.
+
+MOST IMPORTANT SQL COMMANDS : - 
+1) SELECT - Extracts data from a database.
+2) UPDATE - Updates data in a database.
+3) DELETE - Deletes data in a database.
+4) INSERT INTO - Inserts new data into a database.
+5) CREATE DATABASE - Creates a new database.
+6) ALTER DATABASE - Modifies a database.
+7) CREATE TABLE - Creates a new table.
+8) ALTER TABLE - Modifies a table.
+9) DROP TABLE - Deletes a table.
+10) CREATE INDEX - Creates an index.
+11) DROP INDEX - Deletes an index.
+
+SELECT DISTINCT - It selects all the different values present in a specific column/columns.
+
+SELECT COUNT( DISTINCT Column_Name ) FROM Table_Name - It returns the number of different entries present in a specified column/columns.
+
+WHERE Clause - It filters records in a database based on a specific condition.
+
+BETWEEN Operator - It returns only those records between a specific range.
+
+LIKE Operator - It matches only those records which matches a specified pattern.
+
+IN Operator - It specifies multiple possible values for a columns and retrieves those records containing only those values.\
+
+Usage of NOT keyword : - 
+
+SELECT  *  FROM  Table_Name WHERE NOT Column_Name  = ' Field Value ' ;
+
+
+
+ 
+
+
+
+
